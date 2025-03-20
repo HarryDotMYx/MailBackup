@@ -1,0 +1,13 @@
+Flask
+IMAPClient
+tqdm
+Werkzeug
+click
+blinker
+itsdangerous
+Jinja2
+MarkupSafe
+six
+secure-smtplib
+gunicorn
+python-dotenv
