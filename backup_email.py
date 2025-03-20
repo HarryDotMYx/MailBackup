@@ -17,9 +17,9 @@ app.secret_key = os.urandom(24)  # Secure secret key for sessions
 
 BACKUP_ROOT = "backup"
 BATCH_SIZE = 50
-SMTP_SERVER = "smtp11.mschosting.com"
+SMTP_SERVER = "SMTP_SERVER"
 SMTP_PORT = 465  # SSL port
-IMAP_SERVER = "smtp11.mschosting.com"  # Updated IMAP server
+IMAP_SERVER = "SMTP_SERVER"  # Updated IMAP server
 IMAP_PORT = 993  # Standard IMAP SSL port
 
 def login_required(f):
