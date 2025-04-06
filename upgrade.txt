@@ -1,0 +1,87 @@
+# Email Backup System - Version 2.0 Upgrade Notes
+
+## Major Improvements
+
+1. Performance Enhancements
+   - Increased batch size from 100 to 150 emails
+   - Enhanced caching system with larger capacity and optimized TTL
+   - Added LRU cache for email metadata
+   - Improved async processing with better error handling
+
+2. New Features
+   - Real-time backup progress tracking via API endpoint
+   - Email metadata storage for faster retrieval
+   - Comprehensive logging system
+   - Session persistence (24-hour duration)
+   - Progress callback system for batch processing
+
+3. Security Updates
+   - Enhanced SSL context handling
+   - Improved session management
+   - Better error logging and handling
+   - Secure file operations with proper error catching
+
+4. Caching Improvements
+   - Email cache increased to 2000 items with 2-hour TTL
+   - Folder cache increased to 200 items with 10-minute TTL
+   - New metadata cache using LRU with 1000 items
+   - Optimized cache hit ratio
+
+5. Error Handling
+   - Added comprehensive logging system
+   - Better exception handling throughout the application
+   - Detailed error messages in logs
+   - Retry mechanism for failed operations
+
+6. Code Organization
+   - Better structured async functions
+   - Improved code documentation
+   - Cleaner function signatures
+   - More consistent error handling
+
+7. Dependencies
+   - Updated all packages to latest versions
+   - Added APScheduler for background tasks
+   - Added python-dateutil for better date handling
+
+## Migration Notes
+
+1. Database/Storage
+   - No schema changes required
+   - Existing backups remain compatible
+   - New metadata files will be created automatically
+
+2. Configuration
+   - New environment variables available (optional)
+   - Existing settings remain compatible
+   - Added support for custom logging configuration
+
+3. Performance Impact
+   - Reduced memory usage through optimized caching
+   - Faster email retrieval with metadata caching
+   - Improved backup speed with larger batch size
+   - Better handling of large mailboxes
+
+## Known Issues
+
+- None reported in current version
+
+## Upcoming Features
+
+1. Planned for v2.1:
+   - Email attachment handling improvements
+   - Advanced search capabilities
+   - Backup scheduling
+   - Custom folder mapping
+
+2. Under Consideration:
+   - Multiple account support
+   - Backup compression
+   - Export/Import functionality
+   - API endpoints for external integration
+
+## Support
+
+For issues or questions, please create a GitHub issue or contact support.
+
+Created by PG Mohd Azhan Fikri
